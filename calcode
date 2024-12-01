@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int a,b,c;
+    char operator;
+    scanf ("%d  %c %d" ,&a ,&operator ,&b);
+   switch (operator)
+   {
+   case '+' : c=a+b;
+    printf("%d" ,c);
+    break;
+   case '-' : c=a-b;
+   printf("%d" ,c);
+   break;
+   case '*' : c=a*b;
+   printf("%d" ,c);
+   break ;
+   case '/' : c=a/b;
+   printf("%d" ,c);
+   break;
+   case '%' : c=(a/b)*100;
+   printf("%d" ,c);
+
+   default: printf("enter valid input");
+    break;
+   } 
+    return 0;
+}
